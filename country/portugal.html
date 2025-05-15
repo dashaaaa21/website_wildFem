@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portugal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #dadada;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.5s ease;
+            background: linear-gradient(to bottom right, #ffffff, #fce4ec);
+        }
+
+        .card-hover:hover {
+            background: linear-gradient(135deg, #fad2d2, #ffe3e8, #fef6fb, #e6f0ff);
+            color: #000000;
+            transform: scale(1.03);
+        }
+
+        .card-hover:hover button {
+            background: linear-gradient(to right, #ffffff, #ffe5ec, #e3f2fd);
+            color: #000;
+        }
+
+        @keyframes bgShift {
+            0% {
+                background: linear-gradient(135deg, #fff5f5, #fdeef4);
+            }
+
+            20% {
+                background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+            }
+
+            40% {
+                background: linear-gradient(135deg, #fef6fb, #fff0f5);
+            }
+
+            60% {
+                background: linear-gradient(135deg, #ffeef0, #f3f8ff);
+            }
+
+            80% {
+                background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+            }
+
+            100% {
+                background: linear-gradient(135deg, #fff5f5, #fdeef4);
+            }
+        }
+
+        .auto-color {
+            animation: bgShift 18s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="text-gray-900">
+    <div class="absolute top-6 left-6 z-50">
+         <a href="../index.html"
+            class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-red-900 hover:text-white transition">
+            ← Back to Home</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen text-white"
+        style="background-image: url('https://plus.unsplash.com/premium_photo-1672116453204-8e7de665a7ec?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+            <h1
+                class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-tight pb-6 text-white">
+                Portugal</h1>
+            <p class="text-xl mb-8 max-w-2xl">Reconnect with your inner self in an exciting, adventurous environment.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Section 1-->
+    <section class="py-20 px-6 ">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="hover:text-red-900 text-5xl font-bold text-white mb-8">Discover Magic Spots</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover rounded-2xl overflow-hidden shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Hidden Beach</h3>
+                    <p>A tranquil bay surrounded by cliffs and turquoise water.</p>
+                    <a href="#gallery">
+                        <button id=""
+                            class="mt-4 px-4 py-2 bg-black text-white rounded-full transition">Explore</button>
+                    </a>
+                </div>
+                <div class="card-hover rounded-2xl overflow-hidden shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Mountain Trail</h3>
+                    <p>Breathtaking hikes through misty peaks and wildflowers.</p>
+                    <a href="#gallery">
+                        <button class="mt-4 px-4 py-2 bg-black text-white rounded-full transition">Explore</button>
+                    </a>
+                </div>
+                <div class="card-hover rounded-2xl overflow-hidden shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Old Town</h3>
+                    <p>Step back in time with colorful houses and cobblestone streets.</p>
+                    <a href="#gallery">
+                        <button class="mt-4 px-4 py-2 bg-black text-white rounded-full transition">Explore</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="py-20 px-6 auto-color">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center md:text-center text-5xl font-bold text-red-900 mb-8">Top Distanation</h2>
+
+            <div class="overflow-x-auto flex space-x-6 snap-x snap-mandatory scroll-smooth pb-4">
+                <div class="glass inline-block w-72 shrink-0 snap-center p-6 rounded-2xl text-black shadow-xl">
+                    <h3 class="text-xl font-semibold mb-2">Lisbon</h3>
+                    <p>Waves, trams and historic streets await you.</p>
+                </div>
+                <div class="glass inline-block w-72 shrink-0 snap-center p-6 rounded-2xl text-black shadow-xl">
+                    <h3 class="text-xl font-semibold mb-2">Porto</h3>
+                    <p>Where wine meets wonderful river views.</p>
+                </div>
+                <div class="glass inline-block w-72 shrink-0 snap-center p-6 rounded-2xl text-black shadow-xl">
+                    <h3 class="text-xl font-semibold mb-2">Algarve</h3>
+                    <p>Golden beaches and stunning sea caves.</p>
+                </div>
+                <div class="glass inline-block w-72 shrink-0 snap-center p-6 rounded-2xl text-black shadow-xl">
+                    <h3 class="text-xl font-semibold mb-2">Sintra</h3>
+                    <p>Fantasy palaces and lush forest trails.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3-->
+    <section id="gallery" class="py-20 px-6 ">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center md:text-center hover:text-white text-5xl font-bold text-red-900 mb-8">Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-64 object-cover rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1558102400-72da9fdbecae?q=80&w=3196&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-64 object-cover rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1532546430529-1be093fd5aaf?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-64 object-cover rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-64 object-cover rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1538509413798-8b3fc7da2e95?q=80&w=3274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-64 object-cover rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1528832439115-7cc3bd6d4100?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-64 object-cover rounded-xl shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-black text-white py-10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2025 Bali Retreats by Daria</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

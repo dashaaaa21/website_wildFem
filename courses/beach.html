@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WildFem Retreats by Daria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      background-color: #dadada;
+    }
+  </style>
+</head>
+
+<body class="">
+  <div class="absolute top-6 left-6 z-50">
+   <a href="../retreats.html"
+      class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-red-900 hover:text-white transition">
+      ← Back to Home </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen text-white"
+    style="background-image: url('https://images.unsplash.com/photo-1519046947096-f43d6481532b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-tight pb-6 text-white">Beach
+        Getaway</h1>
+      <p class="text-xl mb-8 max-w-2xl">Relax, unwind, and feel the beach breeze on a peaceful, rejuvenating retreat.
+      </p>
+      <a href="#schedule"
+        class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-red-900 hover:text-white transition">
+        Choose now
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 px-6 md:px-16">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-5xl font-bold text-white mb-8">A Beach Getaway for Your Soul</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Escape to a world of turquoise waters and soft sand. Let go of your worries while enjoying beachfront
+        relaxation, water activities, and delicious fresh meals. This retreat is all about rejuvenating your mind, body,
+        and spirit on the beach.
+      </p>
+    </div>
+  </section>
+
+  <!-- Program Highlights -->
+  <section class="py-20 ">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold text-white mb-8">Retreat Highlights</h2>
+      <div class="grid  grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="p-6  rounded-2xl shadow-md transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-3 text-red-900">Beachfront Yoga</h3>
+          <p>Daily sunrise and sunset yoga sessions to center your body and calm your mind with the sounds of the ocean.
+          </p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-2xl shadow-md transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-3 text-red-900">Water Activities</h3>
+          <p>Swim, paddleboard, or simply relax by the shore – the beach is your playground.</p>
+        </div>
+        <div class="p-6   rounded-2xl shadow-md transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-3 text-red-900">Fresh Seafood & Healthy Meals</h3>
+          <p>Indulge in fresh seafood and healthy meals that keep you energized and feeling your best.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-20 ">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold text-white mb-8"> Beach Moments</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img
+          src="https://images.unsplash.com/photo-1516370873344-fb7c61054fa9?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl shadow-lg object-cover w-full h-64" />
+        <img
+          src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?q=80&w=2880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl shadow-lg object-cover w-full h-64" />
+        <img
+          src="https://images.unsplash.com/photo-1463023822994-4424fc706fbf?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl shadow-lg object-cover w-full h-64" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="py-20 ">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-6xl font-bold mb-6 text-white">Upcoming Beach Retreats</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-left">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-red-900 mb-2">Beach Escape – Bali</h3>
+          <p class="mb-1">📍 Bali, Indonesia</p>
+          <p class="mb-1">📅 June 14–21, 2025 | 7 Days</p>
+          <p class="mb-4">💰 $1,200</p>
+         <a href="../book.html"
+            class="inline-block bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-full text-sm font-medium">Book
+            Now</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-red-900 mb-2">Sunset Serenity – Costa Rica</h3>
+          <p class="mb-1">📍 Costa Rica</p>
+          <p class="mb-1">📅 July 8–15, 2025 | 8 Days</p>
+          <p class="mb-4">💰 $1,450</p>
+        <a href="../book.html"
+            class="inline-block bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-full text-sm font-medium">Book
+            Now</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-red-900 mb-2">Island Bliss – Greece</h3>
+          <p class="mb-1">📍 Santorini, Greece</p>
+          <p class="mb-1">📅 August 12–18, 2025 | 6 Days</p>
+          <p class="mb-4">💰 $1,600</p>
+          <a href="../book.html"
+            class="inline-block bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-full text-sm font-medium">Book
+            Now</a>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-red-900 mb-2">Tropical Relaxation – Thailand</h3>
+          <p class="mb-1">📍 Thailand</p>
+          <p class="mb-1">📅 Sept 2–9, 2025 | 7 Days</p>
+          <p class="mb-4">💰 $1,350</p>
+          <a href="../book.html"
+            class="inline-block bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-full text-sm font-medium">Book
+            Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="book" class="bg-red-900 text-white text-center py-20 px-6">
+    <h2 class="text-4xl font-bold mb-6">Ready to Begin Your Beach Getaway?</h2>
+    <p class="text-lg mb-8">Spaces are limited — reserve your spot now for the perfect beach retreat.</p>
+ <a href="../book.html"
+      class="bg-white text-red-900 font-semibold px-8 py-3 rounded-full hover:bg-red-100 transition">Reserve Now</a>
+  </section>
+
+  <!-- 10. Footer / Contact -->
+  <footer id="contact" class="bg-black text-white py-10">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Adventure Retreats by Daria</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">Facebook</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

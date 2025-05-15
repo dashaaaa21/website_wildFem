@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portugal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #dadada;
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card-hover {
+      transition: all 0.5s ease;
+      background: linear-gradient(to bottom right, #ffffff, #fce4ec);
+    }
+
+    .card-hover:hover {
+      background: linear-gradient(135deg, #fad2d2, #ffe3e8, #fef6fb, #e6f0ff);
+      color: #000000;
+      transform: scale(1.03);
+    }
+
+    .card-hover:hover button {
+      background: linear-gradient(to right, #ffffff, #ffe5ec, #e3f2fd);
+      color: #000;
+    }
+
+    @keyframes bgShift {
+      0% {
+        background: linear-gradient(135deg, #fff5f5, #fdeef4);
+      }
+
+      20% {
+        background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+      }
+
+      40% {
+        background: linear-gradient(135deg, #fef6fb, #fff0f5);
+      }
+
+      60% {
+        background: linear-gradient(135deg, #ffeef0, #f3f8ff);
+      }
+
+      80% {
+        background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+      }
+
+      100% {
+        background: linear-gradient(135deg, #fff5f5, #fdeef4);
+      }
+    }
+
+    .auto-color {
+      animation: bgShift 18s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="text-gray-900">
+  <div class="absolute top-6 left-6 z-50">
+     <a href="../index.html"
+      class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-red-900 hover:text-white transition">
+      ← Back to Home</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen text-white"
+    style="background-image: url('https://plus.unsplash.com/premium_photo-1661891622579-bee76e28c304?q=80&w=2362&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-tight pb-6 text-white">
+        Egypt</h1>
+      <p class="text-xl mb-8 max-w-2xl">Experience ancient wonders, timeless culture, and breathtaking landscapes.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="hover:text-red-900 text-5xl text-center font-bold text-white mb-8">Visual Journey through Egypt</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <img class="rounded-xl shadow-lg"
+        src="https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Pyramids of Giza" />
+      <img class="rounded-xl shadow-lg"
+        src="https://images.unsplash.com/photo-1600520611035-84157ad4084d?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Nile River" />
+      <img class="rounded-xl shadow-lg"
+        src="https://images.unsplash.com/photo-1562679299-266edbefd6d7?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Luxor Temples" />
+    </div>
+  </section>
+
+  <!-- Best Months to Visit -->
+  <section class="py-16 px-6 max-w-7xl mx-auto bg-gradient-to-r from-red-100 to-red-50 rounded-3xl shadow-lg">
+    <h2 class="text-red-900 text-5xl text-center font-bold  mb-8">Best Months to Visit Egypt</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-900">
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">January</h3>
+        <p>Mild weather, perfect for sightseeing without crowds.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">February</h3>
+        <p>Ideal for visiting pyramids and cruising the Nile.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">March</h3>
+        <p>Spring warmth with blossoming landscapes.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">April</h3>
+        <p>Great beach weather and cultural festivals.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">May</h3>
+        <p>Sunshine and fewer tourists for desert adventures.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">June</h3>
+        <p>Hot weather perfect for Red Sea diving.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">July</h3>
+        <p>Beach resorts with summer deals.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">August</h3>
+        <p>Warmest month; relax by sea or pool.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">September</h3>
+        <p>Ideal weather for exploring ancient sites.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">October</h3>
+        <p>Balanced weather and golden scenery.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">November</h3>
+        <p>Great visibility for diving, mild inland temps.</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-semibold mb-2">December</h3>
+        <p>Festive season with cultural highlights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discover Magic Spots -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="hover:text-red-900 text-5xl text-center font-bold text-white mb-8">Discover Egypt’s Magic Spots</h2>
+    <ul class="space-y-8">
+      <li class="flex items-center space-x-6 bg-red-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="icon-circle">1</div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-1 text-red-800">The Great Pyramids</h3>
+          <p>Marvel at the iconic pyramids of Giza and the enigmatic Sphinx, ancient wonders of the world.</p>
+          <a href="#gallery" class="inline-block mt-3 text-red-800 font-semibold hover:underline">Photos &rarr;</a>
+        </div>
+      </li>
+      <li class="flex items-center space-x-6 bg-red-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="icon-circle">2</div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-1 text-red-800">Nile River Cruise</h3>
+          <p>Glide along the lifeblood of Egypt with serene boat rides that reveal timeless landscapes.</p>
+          <a href="#gallery" class="inline-block mt-3 text-red-800 font-semibold hover:underline">Photos &rarr;</a>
+        </div>
+      </li>
+      <li class="flex items-center space-x-6 bg-red-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="icon-circle">3</div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-1 text-red-800">Luxor Temples</h3>
+          <p>Step into a world of history and art at Egypt’s majestic temples, rich with ancient stories.</p>
+          <a href="#gallery" class="inline-block mt-3 text-red-800 font-semibold hover:underline">Photos &rarr;</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="bg-black text-white py-10">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Bali Retreats by Daria</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

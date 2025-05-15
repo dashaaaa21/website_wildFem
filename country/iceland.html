@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fade-in-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .motion-safe\:animate-fade-in-down {
+            animation: fade-in-down 1s ease-out both;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #dadada;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .card-hover {
+            transition: all 0.4s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="text-gray-900">
+    <div class="absolute top-6 left-6 z-50">
+      <a href="../index.html"
+            class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-red-900 hover:text-white transition">
+            ← Back to Home</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen text-white"
+        style="background-image: url('https://plus.unsplash.com/premium_photo-1674583546207-3a7a9c98baa9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+            <h1 class="text-6xl md:text-8xl font-bold leading-tight pb-6 text-white">
+                Iceland</h1>
+            <p class="text-xl mb-8 max-w-2xl">Land of fire and ice — explore glaciers, volcanoes, and northern lights.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nature Wonders Section -->
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="hover:text-red-900 text-5xl text-center font-bold text-white mb-8">Natural Wonders of Iceland</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="glass p-6 rounded-xl shadow-md card-hover">
+                <img class="rounded-xl mb-6"
+                    src="https://images.unsplash.com/photo-1500043357865-c6b8827edf10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Blue Lagoon" />
+                <h3 class="text-2xl font-semibold mb-2">Blue Lagoon</h3>
+                <p>Soak in the warm, mineral-rich waters surrounded by lava fields and steam clouds.</p>
+            </div>
+
+            <div class="glass p-6 rounded-xl shadow-md card-hover">
+                <img class="rounded-xl mb-6"
+                    src="https://images.unsplash.com/photo-1519396899666-1ae8531ef17b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Gullfoss Waterfall" />
+                <h3 class="text-2xl font-semibold mb-2">Gullfoss Waterfall</h3>
+                <p>Marvel at the golden cascade plunging into a dramatic canyon — a top Golden Circle stop.</p>
+            </div>
+
+            <div class="glass p-6 rounded-xl shadow-md card-hover">
+                <img class="rounded-xl mb-6"
+                    src="https://images.unsplash.com/photo-1696913404092-11681397617d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Vatnajökull Glacier" />
+                <h3 class="text-2xl font-semibold mb-2">Vatnajökull Glacier</h3>
+                <p>Europe's largest glacier offers stunning ice caves and hiking adventures.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Food Experience -->
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="hover:text-red-900 text-5xl text-center font-bold text-white mb-8">Taste of Iceland</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-2">Icelandic Lamb</h3>
+                <p>Free-range and grass-fed, lamb is the heart of traditional Icelandic cuisine.</p>
+            </div>
+            <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-2">Skyr Yogurt</h3>
+                <p>Thick, creamy, and rich in protein — enjoy it sweet or savory.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips -->
+    <section class="relative py-20 px-6 max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden backdrop-blur-md"
+        style="background-image: url('https://images.unsplash.com/photo-1549887534-158db1474904?auto=format&fit=crop&w=1600'); background-size: cover; background-position: center;">
+
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
+
+
+        <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-white/20 rounded-full blur-3xl animate-pulse z-0">
+        </div>
+
+
+        <div class="relative z-10 text-white">
+
+            <h2
+                class="text-5xl text-center font-black mb-12 transition duration-700 hover:scale-105 hover:text-red-300 motion-safe:animate-fade-in-down">
+                Travel Tips for Iceland
+            </h2>
+
+            <ul class="space-y-8">
+                <li class="tip-item opacity-0 translate-y-6 transition duration-700 ease-out delay-[100ms]">
+                    <strong>Dress in Layers:</strong> Weather can change rapidly, so be prepared for sun, rain, and snow
+                    — all in one day.
+                </li>
+                <li class="tip-item opacity-0 translate-y-6 transition duration-700 ease-out delay-[300ms]">
+                    <strong>Rent a 4x4:</strong> Some scenic routes require an off-road capable vehicle, especially in
+                    winter.
+                </li>
+                <li class="tip-item opacity-0 translate-y-6 transition duration-700 ease-out delay-[500ms]">
+                    <strong>Respect Nature:</strong> Stick to paths and avoid damaging the fragile moss.
+                </li>
+                <li class="tip-item opacity-0 translate-y-6 transition duration-700 ease-out delay-[700ms]">
+                    <strong>Stay Safe:</strong> Always check road and weather conditions before heading out.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 mt-16">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2025 Iceland Explorer by Daria</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-6');
+                    }
+                });
+            },
+            {
+                threshold: 0.3,
+            }
+        );
+
+        document.querySelectorAll('.tip-item').forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+
+</html>

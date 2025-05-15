@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Italy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #dadada;
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card-hover {
+      transition: all 0.5s ease;
+      background: linear-gradient(to bottom right, #ffffff, #fce4ec);
+    }
+
+    .card-hover:hover {
+      background: linear-gradient(135deg, #fad2d2, #ffe3e8, #fef6fb, #e6f0ff);
+      color: #000000;
+      transform: scale(1.03);
+    }
+
+    .card-hover:hover button {
+      background: linear-gradient(to right, #ffffff, #ffe5ec, #e3f2fd);
+      color: #000;
+    }
+
+    @keyframes bgShift {
+      0% {
+        background: linear-gradient(135deg, #fff5f5, #471026);
+      }
+
+      20% {
+        background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+      }
+
+      40% {
+        background: linear-gradient(135deg, #fef6fb, #fff0f5);
+      }
+
+      60% {
+        background: linear-gradient(135deg, #ffeef0, #f3f8ff);
+      }
+
+      80% {
+        background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+      }
+
+      100% {
+        background: linear-gradient(135deg, #fff5f5, #fdeef4);
+      }
+    }
+
+    .auto-color {
+      animation: bgShift 18s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="text-gray-900">
+  <div class="absolute top-6 left-6 z-50">
+    <a href="../index.html"
+      class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-red-900 hover:text-white transition">
+      ← Back to Home</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen text-white"
+    style="background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-tight pb-6 text-white">
+        Italy</h1>
+      <p class="text-xl mb-8 max-w-2xl">Reconnect with your inner self in an exciting, adventurous environment.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Magic Spots Section -->
+  <section class="py-20 px-6 bg-gradient-to-r from-[#dadada] to-[#b2aeae]">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class=" hover:text-red-900 text-5xl font-bold text-white mb-10">Explore Famous Italian Charms</h2>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
+        <!-- Card 1 -->
+        <div
+          class="p-6 bg-white shadow-lg rounded-xl transform transition-all hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#f2d3d3] hover:to-[#b2aeae]">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Amalfi Coast</h3>
+          <p class="text-gray-700 mb-4">Cliffside villages and azure seas await.</p>
+          <a href="#gallery">
+            <button
+              class="px-6 py-2 bg-black text-white rounded-full transform transition-all hover:bg-red-900 hover:scale-105">Discover</button>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="p-6 bg-white shadow-lg rounded-xl transform transition-all hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#f2d3d3] hover:to-[#b2aeae]">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Tuscany Hills</h3>
+          <p class="text-gray-700 mb-4">Golden fields and serene vineyards roll on forever.</p>
+          <a href="#gallery">
+            <button
+              class="px-6 py-2 bg-black text-white rounded-full transform transition-all hover:bg-red-900  hover:scale-105">Discover</button>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="p-6 bg-white shadow-lg rounded-xl transform transition-all hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-[#f2d3d3] hover:to-[#b2aeae]">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Venetian Canals</h3>
+          <p class="text-gray-700 mb-4">Drift in gondolas under romantic bridges.</p>
+          <a href="#gallery">
+            <button
+              class="px-6 py-2 bg-black text-white rounded-full transform transition-all hover:bg-red-900  hover:scale-105">Discover</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Top Cities List Section -->
+  <section class="py-20 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-5xl font-bold text-red-900 mb-10">Must-Visit Cities</h2>
+      <div class="space-y-6">
+        <div class="glass p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-bold">Rome</h3>
+          <p>The Eternal City filled with ancient wonders.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-bold">Florence</h3>
+          <p>Birthplace of the Renaissance and artistic majesty.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-bold">Milan</h3>
+          <p>Modern fashion meets timeless architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 px-6 ">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="hover:text-white text-5xl font-bold text-red-900 mb-10 text-center">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1677494867836-3f56b1261bc5?q=80&w=3508&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl h-64 w-full object-cover shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?q=80&w=3420&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl h-64 w-full object-cover shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=3328&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl h-64 w-full object-cover shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl h-64 w-full object-cover shadow-lg">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661962292128-879bb496ce17?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl h-64 w-full object-cover shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1549893072-4bc678117f45?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-xl h-64 w-full object-cover shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Italia Retreats</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src:   url('../fonts/DMSans-VariableFont_opsz\,wght.ttf');
+    font-weight: 400 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Dm Sans';
+    @apply text-mainText;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper {
+    @apply flex flex-col items-center min-h-screen overflow-hidden;
+}
+
+.section {
+    @apply w-full flex flex-col items-center px-5;
+}
+
+.container {
+    @apply max-w-screen-xl w-full;
+}
+
+body.light-theme {
+    @apply bg-mainBackLight text-mainTextLight;
+}
+
+
+body.dark-theme {
+    @apply bg-darkgray text-mainText;
+}
+
+
+body.dark-theme button {
+    @apply  bg-darkgray text-white;
+}
+body.light-theme button {
+    @apply  bg-mainBackLight text-black;
+}
+
+
+body.light-theme .first {
+    @apply bg-mainBackLight text-mainTextLight;
+}
+
+body.dark-theme .first {
+    @apply bg-darkgray text-mainText;
+}
+body.dark-theme h1 {
+    @apply  text-mainText;
+}
+
